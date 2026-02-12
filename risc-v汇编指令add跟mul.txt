@@ -1,0 +1,71 @@
+# First RISC-V Assemble Sample
+.macro do_nothing	# directive
+	nop		# pseudo-instruction
+	nop		# pseudo-instruction
+.endm			# directive
+
+	.text		# directive
+	.global _start	# directive
+_start: 		# Label
+	li x6, 5	# pseudo-instruction
+	li x7, 4	# pseudo-instruction
+	add x5, x6, x7	# instruction
+	mul x8, x6, x7	# instruction
+	do_nothing	# Calling macro
+stop:	j stop		# statement in one line
+
+	.end		# End of file
+
+
+#objdump -S test.elf
+
+test.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+80000000 <_start>:
+.endm                   # directive
+
+        .text           # directive
+        .global _start  # directive
+_start:                 # Label
+        li x6, 5        # pseudo-instruction
+80000000:       00500313                li      t1,5
+        li x7, 4        # pseudo-instruction
+80000004:       00400393                li      t2,4
+        add x5, x6, x7  # instruction
+80000008:       007302b3                add     t0,t1,t2
+        mul x8, x6, x7  # instruction
+8000000c:       02730433                mul     s0,t1,t2
+        do_nothing      # Calling macro
+80000010:       00000013                nop
+80000014:       00000013                nop
+
+80000018 <stop>:
+stop:   j stop          # statement in one line
+80000018:       0000006f                j       80000018 <stop>
+
+
+
+机器码：007302b3 汇编：add x5, x6, x7 
+
+0000 0000 0111 0011 0000 0010 1011 0011
+                               011 0011 #查手册，这是一条OP指令
+                         0010 1 #这个指向寄存器rd，位目标寄存器
+                     000 #查手册，二级opcode代表，这是一条加法指令或是减法指令
+               0011 0   #指向源一寄存器rs1
+        0 0111  #指向源寄存器rs2
+0000 000 #三级opcode表示这是一条加法指令
+
+
+
+机器码：273 0433 汇编：mul     s0,t1,t2
+
+0000 0010 0111 0011 0000 0100 0011 0011
+                               011 0011 #查手册，这是一条OP指令
+                         0100 0 #这个指向寄存器rd，位目标寄存器
+                     000 #查手册，二级opcode代表，这是一条加法指令或是减法指令
+               0011 0   #指向源一寄存器rs1
+        0 0111  #指向源寄存器rs2
+0000 001 #三级opcode表示这是一条加法指令

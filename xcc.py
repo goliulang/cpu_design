@@ -30,7 +30,7 @@ regester_dict = {
 
 HLT = 0x0000
 
-micro = [HLT for _ in range(5)]
+micro = [HLT for _ in range(32)]
 
 
 i=0
@@ -65,8 +65,145 @@ i=i+1
 opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
 micro[i] = opcode_tmp
 i=i+1
-
 print(type(opcode_tmp), opcode_tmp)
+
+
+
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+#add a2, a4, a3
+#op = op | a2<<4 | a3<<8 | a4 << 12
+opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a3"]<<8 | regester_dict["a4"]<<12
+micro[i] = opcode_tmp
+i=i+1
+print(type(opcode_tmp), opcode_tmp)
+
+
+
 
 
 with open(filename, 'wb') as file:

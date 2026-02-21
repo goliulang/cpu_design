@@ -51,7 +51,7 @@ micro[i] = opcode_tmp
 print(type(opcode_tmp), opcode_tmp)
 i=i+1
 
-'''
+
 #add a2, a1, a0
 #op = op | a2<<4 | a1<<8 | a0 << 12
 opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a1"]<<8 | regester_dict["a0"]<<12
@@ -60,6 +60,7 @@ micro[i] = opcode_tmp
 print(type(opcode_tmp), opcode_tmp)
 i=i+1
 
+'''
 #add a2, a1, a0
 #op = op | a2<<4 | a1<<8 | a0 << 12
 opcode_tmp = opcode_dict["add"] | regester_dict["a2"]<<4 | regester_dict["a1"]<<8 | regester_dict["a0"]<<12
